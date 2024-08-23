@@ -1,0 +1,28 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#surprise img {
+    transform: rotate(-10deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+#surprise img:hover {
+    transform: rotate(10deg);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-20%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+}
